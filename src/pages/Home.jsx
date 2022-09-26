@@ -9,9 +9,8 @@ function Home() {
     const test = async () => {
 
         axios({
-
-            // Endpoint to send files
-            url: "http://localhost:8080/test",
+            // url: "http://demo-graphql:8080/graphql",
+            url: "http://content-provider:8080/test",
             method: "GET",
             headers: {
 
