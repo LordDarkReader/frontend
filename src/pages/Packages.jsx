@@ -1,14 +1,12 @@
-import axios from "axios";
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 
 function Packages() {
 
 
-
     return (
         <>
-            <section>
+            <section className='container'>
                 <h1>Create New Ticket</h1>
                 <p>Please fill out the form below</p>
             </section>

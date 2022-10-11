@@ -8,32 +8,21 @@ function NavTest() {
     const navigate = useNavigate();
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg"  style={{background: '#dc0a31'}}>
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavDropdown title="Management" id="collasible-nav-dropdown">
+                        <NavDropdown title="Management" id="collasible-nav-dropdown" className="dupa" >
                             <NavDropdown.Item onClick={() => navigate('/packages')}>PAK</NavDropdown.Item>
-                            <NavDropdown.Item href="/packages">UD</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">DE</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.4">RE</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.1">LP</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">LU</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">LPR</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.4">PG</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.1">S</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">PL</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">UK</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.4">PC</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/jackpot')}>jackpot</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/test-connection')}>Test connection</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/test-connection-query')}>Test connection query</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/test-connection-mutation')}>Test connection mutation</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Reports" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">BU</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Pak</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">RUF</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">RPR</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">ZSZ</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.4">HIS</NavDropdown.Item>
+                        <NavDropdown title="Reports" style={{color: 'white'}} id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="#">BU</NavDropdown.Item>
+                            <NavDropdown.Item href="#">Pak</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
@@ -46,6 +35,8 @@ function NavTest() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
+
     );
 }
 
